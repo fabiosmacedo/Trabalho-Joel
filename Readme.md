@@ -22,9 +22,7 @@
 ## Requisitos não funcionais
 - Use estruturas heterogêneas e ciclos de repetição. 
 
-- Construa uma interface que permita ao técnico saber a cada momento
-
-  - o número ordinal do jogador que está sendo cadastrado.
+- Construa uma interface que permita ao técnico saber a cada momento o número ordinal do jogador que está sendo cadastrado.
 
     - Por exemplo, “Insira o terceiro jogador”. 
 

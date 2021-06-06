@@ -9,6 +9,7 @@ int main()
   struct selecao
   {
     char escalacao;
+    
   };
 
   /*Escalacação */

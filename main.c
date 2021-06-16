@@ -32,6 +32,29 @@ void mostrarSelecao()
 
 int main()
 {
+  /* Jogado */
+  struct Jogador
+  {
+    int numero_camisa;
+    char nome[60];
+  } jogador;
+
+  /*Escalacação */
+  struct Escalacao
+  {
+    struct Jogador jogador;
+  } escalacao;
+  
+  /*Seleção*/
+  struct Selecao
+  {
+    struct Escalacao escalacao;
+  } selecao;
+
+
+
+
+
   // mostra cabelho do sistema
   cabecalho();  
     
@@ -43,21 +66,30 @@ int main()
 
 
   // aqui construimos a escalação
-  // int i;
+  printf("Insira o nome do jogador corresponde a camisa \n");
+
+  int continuar = 1;
+  
+  while( continuar )
+  {    
  
+    /* instacio o Jogado */ 
+    for(int i=0; i<=5; i++)
+    {
+      // pega o nome do jogador
+      printf("Camisa %d nome do Jogador: ", i );
+      scanf("%s", jogador.nome);
+      // número da camisa
+      jogador.numero_camisa = i;
+      
+    }    
 
-  for(int i=0; i <= 5; i++)
-  {
-    
-    printf("* Insira o nome do jogador corresponde a camisa \n*");
 
-    printf("Nome do camisa %d\n", i);
-   
-    
-
+    printf("Digite 1 para cadastrar nova escalação\n" );
+    printf("Digite 0 para sair\n" );
+    scanf("%d", &continuar); 
   }
-
-
+  
 
 
 /* estrutura para a seleção */
@@ -76,33 +108,8 @@ int main()
 
 
 
-  /* Jogado */
-  struct Jogador
-  {
-    int numero_camisa;
-    char nome[60];
-  };
+ 
 
-
-  /*Escalacação */
-  struct Escalacao
-  {
-    struct Jogador jogador;
-  };
-  
-  /*Seleção*/
-  struct Selecao
-  {
-    struct Escalacao escalacao;
-  };
-
-
-/* insatacio a Selecao */
-struct Selecao selecao;
-/* instancia para criar a escalação  */
-struct Escalacao escalacao;
-/* instacio o Jogado */
-struct Jogador jogador;
 
 /* inserindo nova escalação */
 for(int i = 0; i < 11; i++){

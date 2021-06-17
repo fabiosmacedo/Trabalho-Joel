@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int opcaoEscolha;
 
 /* Jogador */
@@ -9,6 +8,10 @@ typedef struct
     int numeroCamisa;
     char nomeJogador[60];
   }Jogador;
+
+Jogador jogadores[11];
+
+
 
 /*Escalacação */
   struct Escalacao
